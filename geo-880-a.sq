@@ -1,0 +1,880 @@
+SELECT ?A { ?texas p:capital ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT ?A { ?virginia p:city ?A FILTER (regex(str(?virginia), "virginia", "i")) . }
+SELECT ?A { ?oregon r:type p:State . ?oregon p:highest_point ?A FILTER (regex(str(?oregon), "oregon", "i")) . }
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?california p:lake ?A FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT (COUNT(?A) AS ?QTD) { ?pennsylvania p:city ?A FILTER (regex(str(?pennsylvania), "pennsylvania", "i")) . ?A r:type p:Big . } 
+SELECT (COUNT(?A) AS ?QTD) { ?rhode_island p:capital ?A FILTER (regex(str(?rhode_island), "rhode_island", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?louisiana p:city ?A FILTER (regex(str(?louisiana), "louisiana", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?montana p:city ?A FILTER (regex(str(?montana), "montana", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?alabama p:citizen ?A FILTER (regex(str(?alabama), "alabama", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?boulder p:citizen ?A FILTER (regex(str(?boulder), "boulder", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?arizona p:city ?A FILTER (regex(str(?arizona), "arizona", "i")) . ?A r:type p:Major . }
+SELECT (COUNT(?A) AS ?QTD) { ?florida p:city ?A FILTER (regex(str(?florida), "florida", "i")) . ?A r:type p:Major . }
+SELECT (COUNT(?A) AS ?QTD) { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:Major . }
+SELECT (COUNT(?A) AS ?QTD) { ?oregon p:city ?A FILTER (regex(str(?oregon), "oregon", "i")) . ?A r:type p:Major . }
+SELECT ?population { ?nevada r:type p:State FILTER (regex(str(?nevada), "nevada", "i")) . ?nevada p:population ?population . }
+SELECT ?population { ?iowa p:population ?population FILTER (regex(str(?iowa), "iowa", "i")) . }
+SELECT ?population { ?new_york p:population ?population FILTER (regex(str(?new_york), "new_york", "i")) . }
+SELECT ?population { ?boulder p:population ?population FILTER (regex(str(?boulder), "boulder", "i")) . }
+SELECT ?population { ?austin ?A p:population ?population FILTER (regex(str(?austin), "austin", "i")) . }
+SELECT ?population { ?california p:population ?population FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?population { ?chicago p:population ?population FILTER (regex(str(?chicago), "chicago", "i")) . }
+SELECT ?population { ?detroit p:population ?population FILTER (regex(str(?detroit), "detroit", "i")) . }
+SELECT ?population { ?hawaii p:population ?population FILTER (regex(str(?hawaii), "hawaii", "i")) . }
+SELECT ?population { ?houston p:population ?population FILTER (regex(str(?houston), "houston", "i")) . }
+SELECT ?population { ?kalamazoo p:population ?population FILTER (regex(str(?kalamazoo), "kalamazoo", "i")) . }
+SELECT ?population { ?kansas p:population ?population FILTER (regex(str(?kansas), "kansas", "i")) . }
+SELECT ?population { ?mississippi p:population ?population FILTER (regex(str(?mississippi), "mississippi", "i")) . }
+SELECT ?population { ?montana p:population ?population FILTER (regex(str(?montana), "montana", "i")) . }
+SELECT ?population { ?new_hampshire p:population ?population FILTER (regex(str(?new_hampshire), "new_hampshire", "i")) . }
+SELECT ?population { ?new_mexico p:population ?population FILTER (regex(str(?new_mexico), "new_mexico", "i")) . }
+SELECT ?population { ?new_york p:population ?population FILTER (regex(str(?new_york), "new_york", "i")) . }
+SELECT ?population { ?riverside p:population ?population FILTER (regex(str(?riverside), "riverside", "i")) . }
+SELECT ?population { ?san_francisco p:population ?population FILTER (regex(str(?san_francisco), "san_francisco", "i")) . }
+SELECT ?population { ?south_dakota p:population ?population FILTER (regex(str(?south_dakota), "south_dakota", "i")) . }
+SELECT ?population { ?texas p:population ?population FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?population { ?washington p:population ?population FILTER (regex(str(?washington), "washington", "i")) . }
+SELECT ?population { ?washington_dc p:population ?population FILTER (regex(str(?washington_dc), "washington_dc", "i")) . }
+SELECT ?population { ?austin p:population ?population FILTER (regex(str(?austin), "austin", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?colorado p:river ?A FILTER (regex(str(?colorado), "colorado", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?iowa p:river ?A FILTER (regex(str(?iowa), "iowa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?missouri p:river ?A FILTER (regex(str(?missouri), "missouri", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?new_york p:river ?A FILTER (regex(str(?new_york), "new_york", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?idaho p:river ?A FILTER (regex(str(?idaho), "idaho", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?alaska p:river ?A FILTER (regex(str(?alaska), "alaska", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?colorado p:river ?A FILTER (regex(str(?colorado), "colorado", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?washington p:river ?A FILTER (regex(str(?washington), "washington", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:run_through ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:River . }
+SELECT (COUNT(?B) AS ?QTD) { ?A p:border ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:State . ?B p:run_through ?A . ?B r:type p:River . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:border ?alaska FILTER (regex(str(?alaska), "alaska", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:border ?hawaii FILTER (regex(str(?hawaii), "hawaii", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:border ?iowa FILTER (regex(str(?iowa), "iowa", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:border ?tennessee FILTER (regex(str(?tennessee), "tennessee", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?mississippi r:type p:River . ?A p:border ?mississippi FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?iowa p:border ?A FILTER (regex(str(?iowa), "iowa", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?missouri p:border ?A FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?tennessee p:border ?A FILTER (regex(str(?tennessee), "tennessee", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?colorado r:type p:River . ?colorado p:flow_through ?A FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?colorado r:type p:River . ?colorado p:run_through ?A FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?mississippi r:type p:River . ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?missouri r:type p:River . ?missouri p:run_through ?A FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT (COUNT(?B) AS ?QTD) { ?A p:name ?rochester FILTER (regex(str(?rochester), "rochester", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT (COUNT(?B) AS ?QTD) { ?A p:name ?springfield FILTER (regex(str(?springfield), "springfield", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT ?population { ?texas p:population ?population FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?rochester p:state ?A FILTER (regex(str(?rochester), "rochester", "i")) . }
+SELECT ?B { ?usa p:lake ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:name ?B . }
+SELECT ?B { ?colorado p:river ?A FILTER (regex(str(?colorado), "colorado", "i")) . ?A p:name ?B . }
+SELECT ?B { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . ?A p:name ?B . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?B { ?michigan p:lake ?A FILTER (regex(str(?michigan), "michigan", "i")) . ?A r:type p:Major . ?A p:name ?B . }
+SELECT ?B { ?florida p:river ?A FILTER (regex(str(?florida), "florida", "i")) . ?A r:type p:Major . ?A p:name ?B . }
+SELECT ?B { ?arkansas p:river ?A FILTER (regex(str(?arkansas), "arkansas", "i")) . ?A p:name ?B . }
+SELECT ?population { ?boulder p:population ?population FILTER (regex(str(?boulder), "boulder", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:border ?iowa FILTER (regex(str(?iowa), "iowa", "i")) . ?A r:type p:State . }
+SELECT ?population { ?boulder p:population ?population FILTER (regex(str(?boulder), "boulder", "i")) . }
+SELECT ?population { ?boulder p:population ?population FILTER (regex(str(?boulder), "boulder", "i")) . }
+SELECT ?A { ?new_york p:river ?A FILTER (regex(str(?new_york), "new_york", "i")) . }
+SELECT ?A { ?colorado p:city ?A FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?usa p:lake ?A FILTER (regex(str(?usa), "usa", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?B { ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:length ?length . ?A p:run_through ?B . ?B r:type p:State . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?mississippi p:flow ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT ?A { ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT ?A { ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?B { ?A p:border ?missouri FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:State . ?A p:capital ?B . }
+SELECT ?B { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . ?A p:capital ?B . }
+SELECT ?A { ?california p:city ?A FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?B { ?mississippi p:runs ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:city ?B . }
+SELECT ?B { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . ?A p:lake ?B . }
+SELECT ?A { ?alabama p:city ?A FILTER (regex(str(?alabama), "alabama", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?alaska p:city ?A FILTER (regex(str(?alaska), "alaska", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?california p:city ?A FILTER (regex(str(?california), "california", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?delaware p:city ?A FILTER (regex(str(?delaware), "delaware", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?kansas p:city ?A FILTER (regex(str(?kansas), "kansas", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?missouri p:city ?A FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?new_mexico p:city ?A FILTER (regex(str(?new_mexico), "new_mexico", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?new_york p:city ?A FILTER (regex(str(?new_york), "new_york", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?north_carolina p:city ?A FILTER (regex(str(?north_carolina), "north_carolina", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?ohio p:city ?A FILTER (regex(str(?ohio), "ohio", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?oklahoma p:city ?A FILTER (regex(str(?oklahoma), "oklahoma", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?rhode_island p:city ?A FILTER (regex(str(?rhode_island), "rhode_island", "i")) . ?A r:type p:Major . }
+SELECT ?B { ?mississippi p:runs ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:city ?B . ?B r:type p:Major . }
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:Major . }
+SELECT ?B { ?A r:type p:State . ?A p:area ?area . ?A p:city ?B . ?B r:type p:Major . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?B { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . ?A p:city ?B . ?B r:type p:Major . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?california r:type p:State . ?california p:city ?A FILTER (regex(str(?california), "california", "i")) . ?A r:type p:Major . }
+SELECT ?C { ?virginia p:river ?A FILTER (regex(str(?virginia), "virginia", "i")) . ?A r:type p:Major . ?A p:runs ?B . ?B r:type p:State . ?B p:city ?C . ?C r:type p:Major . }
+SELECT ?A { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?vermont p:city ?A FILTER (regex(str(?vermont), "vermont", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?wyoming p:city ?A FILTER (regex(str(?wyoming), "wyoming", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?usa p:lake ?A FILTER (regex(str(?usa), "usa", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?ohio p:river ?A FILTER (regex(str(?ohio), "ohio", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A r:type p:Major . }
+SELECT ?population { ?mississippi p:population ?population FILTER (regex(str(?mississippi), "mississippi", "i")) . }
+SELECT ?B { ?mississippi r:type p:River . ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?B { ?mississippi r:type p:River . ?mississippi p:runs ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?B { ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?B { ?mississippi p:runs ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?B { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?B { ?mississippi r:type p:River . ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?B { ?mississippi r:type p:River . ?mississippi p:runs ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?B { ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?B { ?mississippi p:runs ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?A { ?alaska p:river ?A FILTER (regex(str(?alaska), "alaska", "i")) . }
+SELECT ?A { ?indiana r:type p:State . ?indiana p:river ?A FILTER (regex(str(?indiana), "indiana", "i")) . }
+SELECT ?A { ?texas r:type p:State . ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?montana p:river ?A FILTER (regex(str(?montana), "montana", "i")) . }
+SELECT ?A { ?A r:type p:State . }
+SELECT ?A { ?pennsylvania p:located ?A FILTER (regex(str(?pennsylvania), "pennsylvania", "i")) . ?A r:type p:City . }
+SELECT ?A { ?california p:city ?A FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?A { ?A r:type p:City . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:City . ?A p:population ?population . } ORDER BY ?population LIMIT 1
+SELECT ?A { ?A r:type p:City . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?iowa p:capital ?A FILTER (regex(str(?iowa), "iowa", "i")) . }
+SELECT ?area { ?alaska p:area ?area FILTER (regex(str(?alaska), "alaska", "i")) . }
+SELECT ?area { ?california p:area ?area FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?area { ?florida p:area ?area FILTER (regex(str(?florida), "florida", "i")) . }
+SELECT ?area { ?idaho p:area ?area FILTER (regex(str(?idaho), "idaho", "i")) . }
+SELECT ?area { ?maine p:area ?area FILTER (regex(str(?maine), "maine", "i")) . }
+SELECT ?area { ?new_mexico p:area ?area FILTER (regex(str(?new_mexico), "new_mexico", "i")) . }
+SELECT ?area { ?ohio p:area ?area FILTER (regex(str(?ohio), "ohio", "i")) . }
+SELECT ?area { ?seattle p:area ?area FILTER (regex(str(?seattle), "seattle", "i")) . }
+SELECT ?area { ?south_carolina p:area ?area FILTER (regex(str(?south_carolina), "south_carolina", "i")) . }
+SELECT ?area { ?texas p:area ?area FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?B { ?A p:capital ?albany FILTER (regex(str(?albany), "albany", "i")) . ?A r:type p:State . ?A p:area ?B . }
+SELECT ?area { ?texas r:type p:State . ?texas p:area ?area FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?area { ?wisconsin p:area ?area FILTER (regex(str(?wisconsin), "wisconsin", "i")) . }
+SELECT ?A { ?arizona p:city ?A FILTER (regex(str(?arizona), "arizona", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?georgia p:city ?A FILTER (regex(str(?georgia), "georgia", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?kansas p:city ?A FILTER (regex(str(?kansas), "kansas", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?louisiana p:city ?A FILTER (regex(str(?louisiana), "louisiana", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?nebraska p:city ?A FILTER (regex(str(?nebraska), "nebraska", "i")) . ?A p:area ?length . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?oregon p:city ?A FILTER (regex(str(?oregon), "oregon", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?B r:type p:State . ?B p:city ?A . ?B p:area ?area2 . { SELECT ?A { ?A r:type p:City . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1 } } ORDER BY ?area2 LIMIT 1
+SELECT ?A { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?wyoming p:city ?A FILTER (regex(str(?wyoming), "wyoming", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?illinois p:river ?A FILTER (regex(str(?illinois), "illinois", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?california p:capital ?A FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?A { ?colorado p:capital ?A FILTER (regex(str(?colorado), "colorado", "i")) . }
+SELECT ?A { ?georgia p:capital ?A FILTER (regex(str(?georgia), "georgia", "i")) . }
+SELECT ?A { ?hawaii p:capital ?A FILTER (regex(str(?hawaii), "hawaii", "i")) . }
+SELECT ?A { ?illinois p:capital ?A FILTER (regex(str(?illinois), "illinois", "i")) . }
+SELECT ?A { ?indiana p:capital ?A FILTER (regex(str(?indiana), "indiana", "i")) . }
+SELECT ?A { ?iowa p:capital ?A FILTER (regex(str(?iowa), "iowa", "i")) . }
+SELECT ?A { ?maine p:capital ?A FILTER (regex(str(?maine), "maine", "i")) . }
+SELECT ?A { ?maryland p:capital ?A FILTER (regex(str(?maryland), "maryland", "i")) . }
+SELECT ?A { ?massachusetts p:capital ?A FILTER (regex(str(?massachusetts), "massachusetts", "i")) . }
+SELECT ?A { ?michigan p:capital ?A FILTER (regex(str(?michigan), "michigan", "i")) . }
+SELECT ?A { ?new_hampshire p:capital ?A FILTER (regex(str(?new_hampshire), "new_hampshire", "i")) . }
+SELECT ?A { ?new_jersey p:capital ?A FILTER (regex(str(?new_jersey), "new_jersey", "i")) . }
+SELECT ?A { ?new_york p:capital ?A FILTER (regex(str(?new_york), "new_york", "i")) . }
+SELECT ?A { ?north_dakota p:capital ?A FILTER (regex(str(?north_dakota), "north_dakota", "i")) . }
+SELECT ?A { ?ohio p:capital ?A FILTER (regex(str(?ohio), "ohio", "i")) . }
+SELECT ?A { ?pennsylvania p:capital ?A FILTER (regex(str(?pennsylvania), "pennsylvania", "i")) . }
+SELECT ?A { ?texas p:capital ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?alabama r:type p:State . ?alabama p:capital ?A FILTER (regex(str(?alabama), "alabama", "i")) . }
+SELECT ?A { ?florida r:type p:State . ?florida p:capital ?A FILTER (regex(str(?florida), "florida", "i")) . }
+SELECT ?B { ?A r:type p:State . ?A p:area ?area . ?A p:capital ?B . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?A p:area ?area . ?A p:capital ?B . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?texas r:type p:State . ?texas p:capital ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?C { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . ?B p:border ?A . ?B r:type p:State . ?B p:capital ?C . }
+SELECT ?A { ?utah p:capital ?A FILTER (regex(str(?utah), "utah", "i")) . }
+SELECT ?A { ?vermont p:capital ?A FILTER (regex(str(?vermont), "vermont", "i")) . }
+SELECT ?A { ?washington p:capital ?A FILTER (regex(str(?washington), "washington", "i")) . }
+SELECT ?A { ?A r:type p:City . ?A p:population ?population . } ORDER BY ?population LIMIT 1
+SELECT ((?population/?area) AS ?density) { ?new_york p:population ?population FILTER (regex(str(?new_york), "new_york", "i")) . ?texas p:area ?area . }
+SELECT ?height { ?mckinley r:type p:Mountain . ?mckinley p:height ?height FILTER (regex(str(?mckinley), "mckinley", "i")) . }
+SELECT ?height { ?texas p:mountain ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT ?A { ?new_mexico p:highest_elevation ?A FILTER (regex(str(?new_mexico), "new_mexico", "i")) . }
+SELECT ?A { ?south_carolina p:highest_elevation ?A FILTER (regex(str(?south_carolina), "south_carolina", "i")) . }
+SELECT ?A { ?texas p:highest_elevation ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?united_states p:highest_elevation ?A FILTER (regex(str(?united_states), "united_states", "i")) . }
+SELECT ?A { ?alaska p:mountain ?A FILTER (regex(str(?alaska), "alaska", "i")) . ?A p:height ?highest . } ORDER BY DESC(?highest) LIMIT 1
+SELECT ?A { ?texas p:mountain ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:height ?highest . } ORDER BY DESC(?highest) LIMIT 1
+SELECT ?A { ?usa p:mountain ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:height ?highest . } ORDER BY DESC(?highest) LIMIT 1
+SELECT ?A { ?usa p:mountain ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:height ?highest . } ORDER BY DESC(?highest) LIMIT 1
+SELECT ?A { ?colorado p:highest_point ?A FILTER (regex(str(?colorado), "colorado", "i")) . }
+SELECT ?A { ?delaware p:highest_point ?A FILTER (regex(str(?delaware), "delaware", "i")) . }
+SELECT ?A { ?florida p:highest_point ?A FILTER (regex(str(?florida), "florida", "i")) . }
+SELECT ?A { ?iowa p:highest_point ?A FILTER (regex(str(?iowa), "iowa", "i")) . }
+SELECT ?A { ?kansas p:highest_point ?A FILTER (regex(str(?kansas), "kansas", "i")) . }
+SELECT ?A { ?maine p:highest_point ?A FILTER (regex(str(?maine), "maine", "i")) . }
+SELECT ?A { ?montana p:highest_point ?A FILTER (regex(str(?montana), "montana", "i")) . }
+SELECT ?A { ?new_mexico p:highest_point ?A FILTER (regex(str(?new_mexico), "new_mexico", "i")) . }
+SELECT ?A { ?ohio p:highest_point ?A FILTER (regex(str(?ohio), "ohio", "i")) . }
+SELECT ?A { ?rhode_island p:highest_point ?A FILTER (regex(str(?rhode_island), "rhode_island", "i")) . }
+SELECT ?B { ?A p:border ?georgia FILTER (regex(str(?georgia), "georgia", "i")) . ?A r:type p:State . ?A p:highest_point ?B . }
+SELECT ?A { ?texas p:highest_point ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?B { ?A r:type p:State . ?A p:area ?area . ?A p:highest_point ?B . } ORDER BY ?area LIMIT 1
+SELECT ?B { ?A p:capital ?austin FILTER (regex(str(?austin), "austin", "i")) . ?A r:type p:State . ?A p:highest_point ?B . }
+SELECT ?B { ?A p:capital ?des_moines FILTER (regex(str(?des_moines), "des_moines", "i")) . ?A r:type p:State . ?A p:highest_point ?B . }
+SELECT ?B { ?A p:capital ?des_moines FILTER (regex(str(?des_moines), "des_moines", "i")) . ?A r:type p:State . ?A p:highest_point ?B . }
+SELECT ?B { ?A p:border ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:State . ?A p:highest_point ?B . }
+SELECT ?A { ?united_states p:highest_point ?A FILTER (regex(str(?united_states), "united_states", "i")) . }
+SELECT ?A { ?usa p:highest_point ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT ?A { ?usa p:highest_point ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT ?A { ?virginia p:highest_point ?A FILTER (regex(str(?virginia), "virginia", "i")) . }
+SELECT ?A { ?wyoming p:highest_point ?A FILTER (regex(str(?wyoming), "wyoming", "i")) . }
+SELECT ?A { ?usa p:highest_point ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT ?A { ?A p:capital ?capital . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?B { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . ?A p:city ?B . ?B p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?alabama p:city ?A FILTER (regex(str(?alabama), "alabama", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?california p:city ?A FILTER (regex(str(?california), "california", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?michigan p:city ?A FILTER (regex(str(?michigan), "michigan", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?missouri p:city ?A FILTER (regex(str(?missouri), "missouri", "i")) . ?A p:area ?length . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?rhode_island p:city ?A FILTER (regex(str(?rhode_island), "rhode_island", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?B { ?A p:border ?california FILTER (regex(str(?california), "california", "i")) . ?A r:type p:State . ?A p:city ?B . ?B p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?B { ?usa p:has_state ?B FILTER (regex(str(?usa), "usa", "i")) . ?B p:area ?area2 . ?B p:city ?A . { SELECT ?A { ?A r:type p:City . ?A p:area ?area . } ORDER BY DESC(?area)  LIMIT 1 } } ORDER BY ?area2 LIMIT 1
+SELECT ?A { ?wisconsin p:city ?A FILTER (regex(str(?wisconsin), "wisconsin", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?kansas p:city ?A FILTER (regex(str(?kansas), "kansas", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?B { ?washington p:river ?A FILTER (regex(str(?washington), "washington", "i")) . ?A p:length ?length . ?A p:state ?B . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?length { ?colorado r:type p:River . ?colorado p:length ?length FILTER (regex(str(?colorado), "colorado", "i")) . }
+SELECT ?length { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?length { ?mississippi r:type p:River . ?mississippi p:length ?length FILTER (regex(str(?mississippi), "mississippi", "i")) . }
+SELECT ?A { ?A p:river ?river . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?america p:river ?A FILTER (regex(str(?america), "america", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?california p:river ?A FILTER (regex(str(?california), "california", "i")) . ?A p:length ?length . } ORDER BY DESC(?lonst) LIMIT 1
+SELECT ?A { ?florida p:river ?A FILTER (regex(str(?florida), "florida", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?mississippi p:river ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?new_york p:river ?A FILTER (regex(str(?new_york), "new_york", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?pennsylvania p:river ?A FILTER (regex(str(?pennsylvania), "pennsylvania", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?B { ?A p:border ?nebraska FILTER (regex(str(?nebraska), "nebraska", "i")) . ?A r:type p:State . ?A p:river ?B . ?B p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?united_states p:river ?A FILTER (regex(str(?united_states), "united_states", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?pennsylvania p:lowest_elevation ?A FILTER (regex(str(?pennsylvania), "pennsylvania", "i")) . }
+SELECT ?A { ?arkansas p:lowest_point ?A FILTER (regex(str(?arkansas), "arkansas", "i")) . }
+SELECT ?A { ?california p:lowest_point ?A FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?A { ?louisiana p:lowest_point ?A FILTER (regex(str(?louisiana), "louisiana", "i")) . }
+SELECT ?A { ?massachusetts p:lowest_point ?A FILTER (regex(str(?massachusetts), "massachusetts", "i")) . }
+SELECT ?A { ?mississippi p:lowest_point ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . }
+SELECT ?A { ?oregon p:lowest_point ?A FILTER (regex(str(?oregon), "oregon", "i")) . }
+SELECT ?A { ?texas p:lowest_point ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?california r:type p:State . ?california p:lowest_point ?A FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?A { ?texas r:type p:State . ?texas p:lowest_point ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?united_states p:lowest_point ?A FILTER (regex(str(?united_states), "united_states", "i")) . }
+SELECT ?A { ?usa p:lowest_point ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT ?A { ?wisconsin p:lowest_point ?A FILTER (regex(str(?wisconsin), "wisconsin", "i")) . }
+SELECT ?A { ?colorado p:lowest_point ?A FILTER (regex(str(?colorado), "colorado", "i")) . }
+SELECT ?A { ?usa p:lowest_point ?A FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT ?A { ?montana p:city ?A FILTER (regex(str(?montana), "montana", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?wyoming p:city ?A FILTER (regex(str(?wyoming), "wyoming", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ((?population/?area) AS ?density) { ?maine p:population ?population FILTER (regex(str(?maine), "maine", "i")) . ?maine p:area ?area . }
+SELECT ((?population/?area) AS ?density) { ?south_dakota p:population ?population FILTER (regex(str(?south_dakota), "south_dakota", "i")) . ?south_dakota p:area ?area . }
+SELECT ((?population/?area) AS ?density) { ?texas p:population ?population FILTER (regex(str(?texas), "texas", "i")) . ?texas p:area ?area . }
+SELECT ((?population/?area) AS ?density) { ?wyoming p:population ?population FILTER (regex(str(?wyoming), "wyoming", "i")) . ?wyoming p:area ?area . }
+SELECT ?population { ?boston p:population ?population FILTER (regex(str(?boston), "boston", "i")) . }
+SELECT ?population { ?alaska p:population ?population FILTER (regex(str(?alaska), "alaska", "i")) . }
+SELECT ?population { ?arizona p:population ?population FILTER (regex(str(?arizona), "arizona", "i")) . }
+SELECT ?population { ?atlanta p:population ?population FILTER (regex(str(?atlanta), "atlanta", "i")) . }
+SELECT ?population { ?austin p:population ?population FILTER (regex(str(?austin), "austin", "i")) . }
+SELECT ?population { ?boulder p:population ?population FILTER (regex(str(?boulder), "boulder", "i")) . }
+SELECT ?population { ?california p:population ?population FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?population { ?dallas p:population ?population FILTER (regex(str(?dallas), "dallas", "i")) . }
+SELECT ?population { ?denver p:population ?population FILTER (regex(str(?denver), "denver", "i")) . }
+SELECT ?population { ?hawaii p:population ?population FILTER (regex(str(?hawaii), "hawaii", "i")) . }
+SELECT ?population { ?houston p:population ?population FILTER (regex(str(?houston), "houston", "i")) . }
+SELECT ?population { ?idaho p:population ?population FILTER (regex(str(?idaho), "idaho", "i")) . }
+SELECT ?population { ?illinois p:population ?population FILTER (regex(str(?illinois), "illinois", "i")) . }
+SELECT ?population { ?maine p:population ?population FILTER (regex(str(?maine), "maine", "i")) . }
+SELECT ?population { ?maryland p:population ?population FILTER (regex(str(?maryland), "maryland", "i")) . }
+SELECT ?population { ?minnesota p:population ?population FILTER (regex(str(?minnesota), "minnesota", "i")) . }
+SELECT ?population { ?montana p:population ?population FILTER (regex(str(?montana), "montana", "i")) . }
+SELECT ?population { ?new_mexico p:population ?population FILTER (regex(str(?new_mexico), "new_mexico", "i")) . }
+SELECT ?population { ?new_york p:population ?population FILTER (regex(str(?new_york), "new_york", "i")) . }
+SELECT ?population { ?new_york r:type p:City . ?new_york p:population ?population FILTER (regex(str(?new_york), "new_york", "i")) . }
+SELECT ?population { ?oregon p:population ?population FILTER (regex(str(?oregon), "oregon", "i")) . }
+SELECT ?population { ?rhode_island p:population ?population FILTER (regex(str(?rhode_island), "rhode_island", "i")) . }
+SELECT ?population { ?sacramento p:population ?population FILTER (regex(str(?sacramento), "sacramento", "i")) . }
+SELECT ?population { ?san_antonio p:population ?population FILTER (regex(str(?san_antonio), "san_antonio", "i")) . }
+SELECT ?population { ?seattle p:population ?population FILTER (regex(str(?seattle), "seattle", "i")) . }
+SELECT ?population { ?south_dakota p:population ?population FILTER (regex(str(?south_dakota), "south_dakota", "i")) . }
+SELECT ?population { ?texas p:population ?population FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?population { ?A r:type p:State . ?A p:area ?area . ?A p:capital ?B . ?B p:population ?population . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?population { ?A r:type p:State . ?A p:area ?area . ?A p:capital ?B . ?B p:population ?population . } ORDER BY ?area LIMIT 1
+SELECT ?population { ?tucson p:population ?population FILTER (regex(str(?tucson), "tucson", "i")) . }
+SELECT ?population { ?utah p:population ?population FILTER (regex(str(?utah), "utah", "i")) . }
+SELECT ?population { ?washington p:population ?population FILTER (regex(str(?washington), "washington", "i")) . }
+SELECT ?population { ?washington_dc p:population ?population FILTER (regex(str(?washington_dc), "washington_dc", "i")) . }
+SELECT ?A { ?A p:river ?river . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?alaska p:river ?A FILTER (regex(str(?alaska), "alaska", "i")) . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?iowa p:river ?A FILTER (regex(str(?iowa), "iowa", "i")) . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?nebraska p:river ?A FILTER (regex(str(?nebraska), "nebraska", "i")) . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?united_states p:river ?A FILTER (regex(str(?united_states), "united_states", "i")) . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?california p:size ?A FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?A { ?florida p:size ?A FILTER (regex(str(?florida), "florida", "i")) . }
+SELECT ?A { ?texas p:size ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?B { ?texas p:capital ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:size ?B . }
+SELECT ?A { ?alaska p:city ?A FILTER (regex(str(?alaska), "alaska", "i")) . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?arkansas p:city ?A FILTER (regex(str(?arkansas), "arkansas", "i")) . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?hawaii p:city ?A FILTER (regex(str(?hawaii), "hawaii", "i")) . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?B r:type p:State . ?B p:city ?A . ?B p:area ?area2 . { SELECT ?A { ?A r:type p:City . ?A p:area ?area . } ORDER BY ?area LIMIT 1 } } ORDER BY DESC(?area2) LIMIT 1
+SELECT ?A { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?washington p:city ?A FILTER (regex(str(?washington), "washington", "i")) . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?usa p:state ?B FILTER (regex(str(?usa), "usa", "i")) . ?B p:area ?area2 . { SELECT ?A { ?A r:type p:City . ?A p:area ?area . } ORDER BY ?area LIMIT 1 } } ORDER BY ?area2 LIMIT 1
+SELECT ?A { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY ?population LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?america p:mountain ?A FILTER (regex(str(?america), "america", "i")) . ?A p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT ?A { ?united_states p:mountain ?A FILTER (regex(str(?united_states), "united_states", "i")) . ?A p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT ?area { ?usa p:area ?area FILTER (regex(str(?usa), "usa", "i")) . }
+SELECT ?B { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . ?A p:population ?B . }
+SELECT ?length { ?mississippi p:length ?length FILTER (regex(str(?mississippi), "mississippi", "i")) . }
+SELECT ?A { ?alaska p:mountain ?A FILTER (regex(str(?alaska), "alaska", "i")) . }
+SELECT ?A { ?A p:flow_through ?kansas FILTER (regex(str(?kansas), "kansas", "i")) . ?A r:type p:River . }
+SELECT ?A { ?A p:flow_through ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:River . }
+SELECT ?A { ?nevada p:river ?A FILTER (regex(str(?nevada), "nevada", "i")) . }
+SELECT ?A { ?new_mexico p:river ?A FILTER (regex(str(?new_mexico), "new_mexico", "i")) . }
+SELECT ?A { ?oregon p:river ?A FILTER (regex(str(?oregon), "oregon", "i")) . }
+SELECT ?A { ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?utah p:river ?A FILTER (regex(str(?utah), "utah", "i")) . }
+SELECT ?A { ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?A p:flow_through ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:River . }
+SELECT ?A { ?A p:flow_through ?missouri FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:River . }
+SELECT ?C { ?A p:state ?alabama FILTER (regex(str(?alabama), "alabama", "i")) . ?B p:flow_through ?A . ?B r:type p:River . ?B p:border ?C . }
+SELECT ?A { ?A p:run_through ?arizona FILTER (regex(str(?arizona), "arizona", "i")) . ?A r:type p:River . }
+SELECT ?A { ?A p:run_through ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:River . }
+SELECT ?A { ?A p:run_through ?louisiana FILTER (regex(str(?louisiana), "louisiana", "i")) . ?A r:type p:River . }
+SELECT ?A { ?A p:run_through ?maine FILTER (regex(str(?maine), "maine", "i")) . ?A r:type p:River . }
+SELECT ?A { ?A p:run_through ?new_york FILTER (regex(str(?new_york), "new_york", "i")) . ?A r:type p:River . }
+SELECT ?C { ?A p:capital ?atlanta FILTER (regex(str(?atlanta), "atlanta", "i")) . ?A r:type p:State . ?B p:border ?A . ?B r:type p:State . ?C p:run_through ?B . ?C r:type p:River . }
+SELECT ?A { ?A p:run_through ?west_virginia FILTER (regex(str(?west_virginia), "west_virginia", "i")) . ?A r:type p:River . }
+SELECT ?A { ?A p:border ?michigan FILTER (regex(str(?michigan), "michigan", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?new_york FILTER (regex(str(?new_york), "new_york", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:capital ?salem FILTER (regex(str(?salem), "salem", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:city ?flint FILTER (regex(str(?flint), "flint", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:capital ?capital . ?capital p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:city ?city . ?city p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:river ?river . ?river p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:city ?city . ?city p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:river ?river . ?river p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:river ?river . ?river p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:capital ?capital . ?capital p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY ?population LIMIT 1
+SELECT ?A { ?austin p:state ?A FILTER (regex(str(?austin), "austin", "i")) . }
+SELECT ?A { ?boston p:state ?A FILTER (regex(str(?boston), "boston", "i")) . }
+SELECT ?A { ?dallas p:state ?A FILTER (regex(str(?dallas), "dallas", "i")) . }
+SELECT ?A { ?des_moines p:located ?A FILTER (regex(str(?des_moines), "des_moines", "i")) . ?A r:type p:State . }
+SELECT ?A { ?miami p:state ?A FILTER (regex(str(?miami), "miami", "i")) . }
+SELECT ?A { ?pittsburgh p:state ?A FILTER (regex(str(?pittsburgh), "pittsburgh", "i")) . }
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?B { ?A p:river ?river . ?A p:length ?length . ?A p:state ?B . ?B r:type p:State . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?arizona p:border ?A FILTER (regex(str(?arizona), "arizona", "i")) . ?A r:type p:State . }
+SELECT ?A { ?texas p:border ?A FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?alaska FILTER (regex(str(?alaska), "alaska", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?arkansas FILTER (regex(str(?arkansas), "arkansas", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?delaware FILTER (regex(str(?delaware), "delaware", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?florida FILTER (regex(str(?florida), "florida", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?georgia FILTER (regex(str(?georgia), "georgia", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?hawaii FILTER (regex(str(?hawaii), "hawaii", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?indiana FILTER (regex(str(?indiana), "indiana", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?kentucky FILTER (regex(str(?kentucky), "kentucky", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?michigan FILTER (regex(str(?michigan), "michigan", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?missouri FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?montana FILTER (regex(str(?montana), "montana", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?new_hampshire FILTER (regex(str(?new_hampshire), "new_hampshire", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?new_jersey FILTER (regex(str(?new_jersey), "new_jersey", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?ohio FILTER (regex(str(?ohio), "ohio", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?rhode_island FILTER (regex(str(?rhode_island), "rhode_island", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . }
+SELECT ?A { ?mississippi r:type p:River . ?A p:border ?mississippi FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?wisconsin FILTER (regex(str(?wisconsin), "wisconsin", "i")) . ?A r:type p:State . }
+SELECT ?A { ?colorado r:type p:River . ?colorado p:run_through ?A FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:State . }
+SELECT ?A { ?delaware r:type p:River . ?delaware p:run_through ?A FILTER (regex(str(?delaware), "delaware", "i")) . ?A r:type p:State . }
+SELECT ?A { ?mississippi r:type p:River . ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT ?A { ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT ?A { ?missouri r:type p:River . ?missouri p:run_through ?A FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:State . }
+SELECT ?A { ?missouri p:run_through ?A FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:State . }
+SELECT ?A { ?ohio r:type p:River . ?ohio p:run_through ?A FILTER (regex(str(?ohio), "ohio", "i")) . ?A r:type p:State . }
+SELECT ?A { ?ohio r:type p:River . ?ohio p:run_through ?A FILTER (regex(str(?ohio), "ohio", "i")) . ?A r:type p:State . }
+SELECT ?B { ?A p:river ?river . ?A p:length ?length . ?A p:run_through ?B . ?B r:type p:State . } ORDER BY ?length LIMIT 1
+SELECT ?B { ?A p:name ?austin FILTER (regex(str(?austin), "austin", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT ?B { ?A p:name ?austin FILTER (regex(str(?austin), "austin", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT ?B { ?A p:name ?dallas FILTER (regex(str(?dallas), "dallas", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT ?B { ?A p:name ?plano FILTER (regex(str(?plano), "plano", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT ?B { ?A p:name ?portland FILTER (regex(str(?portland), "portland", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT ?B { ?A p:name ?rochester FILTER (regex(str(?rochester), "rochester", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT ?B { ?A p:name ?salt_lake_city FILTER (regex(str(?salt_lake_city), "salt_lake_city", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT ?B { ?A p:name ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . ?B p:river ?A . ?B r:type p:State . }
+SELECT ?A { ?A p:border ?maine FILTER (regex(str(?maine), "maine", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?kentucky FILTER (regex(str(?kentucky), "kentucky", "i")) . ?A r:type p:State . }
+SELECT ?B { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . ?A p:capital ?B . }
+SELECT ?A { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A p:river ?river . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?alaska p:river ?A FILTER (regex(str(?alaska), "alaska", "i")) . }
+SELECT ?A { ?A p:flow_through ?alaska FILTER (regex(str(?alaska), "alaska", "i")) . ?A r:type p:River . }
+SELECT ?C { ?A p:border ?new_mexico FILTER (regex(str(?new_mexico), "new_mexico", "i")) . ?B p:state ?A . ?C p:run_through ?B . ?C r:type p:River . }
+SELECT ?A { ?A p:border ?florida FILTER (regex(str(?florida), "florida", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?hawaii FILTER (regex(str(?hawaii), "hawaii", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:city ?city . ?city p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:river ?river . ?river p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:river ?river . ?river p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A p:river ?red FILTER (regex(str(?red), "red", "i")) . ?A r:type p:State . }
+SELECT ?A { ?kalamazoo p:state ?A FILTER (regex(str(?kalamazoo), "kalamazoo", "i")) . }
+SELECT ?A { ?mckinley r:type p:Mountain . ?mckinley p:state ?A FILTER (regex(str(?mckinley), "mckinley", "i")) . }
+SELECT ?A { ?denver r:type p:City . ?denver p:located ?A FILTER (regex(str(?denver), "denver", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?A { ?A p:border ?alabama FILTER (regex(str(?alabama), "alabama", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?alabama FILTER (regex(str(?alabama), "alabama", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?alaska FILTER (regex(str(?alaska), "alaska", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?arizona FILTER (regex(str(?arizona), "arizona", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?hawaii FILTER (regex(str(?hawaii), "hawaii", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?illinois FILTER (regex(str(?illinois), "illinois", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?iowa FILTER (regex(str(?iowa), "iowa", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?kentucky FILTER (regex(str(?kentucky), "kentucky", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?michigan FILTER (regex(str(?michigan), "michigan", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?new_york FILTER (regex(str(?new_york), "new_york", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?south_dakota FILTER (regex(str(?south_dakota), "south_dakota", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . }
+SELECT ?A { ?missouri r:type p:River . ?A p:border ?missouri FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:State . }
+SELECT ?A { ?colorado r:type p:River . ?colorado p:flow_through ?A FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:State . }
+SELECT ?A { ?chattahoochee r:type p:River . ?chattahoochee p:run_through ?A FILTER (regex(str(?chattahoochee), "chattahoochee", "i")) . ?A r:type p:State . }
+SELECT ?A { ?colorado r:type p:River . ?colorado p:run_through ?A FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:State . }
+SELECT ?B { ?A p:river ?river . ?A p:length ?length . ?A p:cross ?B . ?B r:type p:State . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?B { ?A p:river ?river . ?A p:length ?length . ?A p:run_through ?B . ?B r:type p:State . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?mississippi r:type p:River . ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT ?A { ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT ?A { ?missouri r:type p:River . ?missouri p:pass_through ?A FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:State . }
+SELECT ?A { ?missouri r:type p:River . ?missouri p:run_through ?A FILTER (regex(str(?missouri), "missouri", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A p:river ?river . ?A r:type p:State . }
+SELECT ?B { ?A p:name ?austin FILTER (regex(str(?austin), "austin", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT ?B { ?mississipi p:border ?A FILTER (regex(str(?mississipi), "mississipi", "i")) . ?A r:type p:State . ?A p:highest_point ?B . }
+SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:State . ?A p:lowest_elevation ?lowest_elevation FILTER ( ?lowest_elevation < ?lowest_elevation_2 ) . ?alabama p:lowest_elevation ?lowest_elevation_2 FILTER (regex(str(?alabama), "alabama", "i")) . }
+SELECT ?A { ?A r:type p:River . ?A p:length ?length . ?A p:run_through ?usa FILTER (regex(str(?usa), "usa", "i")) . } ORDER BY DESC(?length) LIMIT 1
+SELECT (COUNT(?A) AS ?QTD) { ?california p:river ?A FILTER (regex(str(?california), "california", "i")) . }
+SELECT ?A { ?A p:border ?utah FILTER (regex(str(?utah), "utah", "i")) . }
+SELECT ?area { ?alaska p:area ?area FILTER (regex(str(?alaska), "alaska", "i")) . }
+SELECT ?area { ?massachusetts p:area ?area FILTER (regex(str(?massachusetts), "massachusetts", "i")) . }
+SELECT ?area { ?new_mexico p:area ?area FILTER (regex(str(?new_mexico), "new_mexico", "i")) . }
+SELECT ?area { ?north_dakota p:area ?area FILTER (regex(str(?north_dakota), "north_dakota", "i")) . }
+SELECT ?area { ?texas p:area ?area FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?area { ?new_york p:area ?area FILTER (regex(str(?new_york), "new_york", "i")) . ?new_york r:type p:City . }
+SELECT ?height { ?A r:type p:State . ?A p:highest_point ?B . ?B p:height ?height . }
+SELECT ?A { ?guadalupe p:hight ?A FILTER (regex(str(?guadalupe), "guadalupe", "i")) . ?guadalupe r:type p:Mountain . }
+SELECT ?A { ?mckinley p:hight ?A FILTER (regex(str(?mckinley), "mckinley", "i")) . ?mckinley r:type p:Mountain . }
+SELECT ?height { ?america p:highest_point ?A FILTER (regex(str(?america), "america", "i")) . ?A p:height ?height . }
+SELECT ?height { ?montana p:highest_point ?A FILTER (regex(str(?montana), "montana", "i")) . ?A p:height ?height . }
+SELECT ?height { ?A r:type p:State . ?A p:highest_point ?B . ?B p:height ?height . { SELECT ?A { ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1 } }
+SELECT ?height { ?alabama p:highest_point ?A FILTER (regex(str(?alabama), "alabama", "i")) . ?A p:height ?height . }
+SELECT ?height { ?delaware p:highest_point ?A FILTER (regex(str(?delaware), "delaware", "i")) . ?A p:height ?height . }
+SELECT ?height { ?florida p:highest_point ?A FILTER (regex(str(?florida), "florida", "i")) . ?A p:height ?height . }
+SELECT ?height { ?louisiana p:highest_point ?A FILTER (regex(str(?louisiana), "louisiana", "i")) . ?A p:height ?height . }
+SELECT ?area { ?alaska p:area ?area FILTER (regex(str(?alaska), "alaska", "i")) . }
+SELECT ?area { ?texas p:area ?area FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?area { ?alaska p:city ?A FILTER (regex(str(?alaska), "alaska", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1 
+SELECT ?length { ?rio_grande p:length ?length FILTER (regex(str(?rio_grande), "rio_grande", "i")) . }
+SELECT ?length { ?colorado p:length ?length FILTER (regex(str(?colorado), "colorado", "i")) . ?colorado r:type p:River . }
+SELECT ?length { ?delaware p:length ?length FILTER (regex(str(?delaware), "delaware", "i")) . ?delaware r:type p:River . }
+SELECT ?length { ?california p:river ?length FILTER (regex(str(?california), "california", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1 
+SELECT ?length { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1 
+SELECT ?length { ?mississippi p:length ?length FILTER (regex(str(?mississippi), "mississippi", "i")) . } 
+SELECT ?length { ?mississippi p:length ?length FILTER (regex(str(?mississippi), "mississippi", "i")) . ?mississippi r:type p:River . }
+SELECT INMILES(?length) { ?mississippi p:length ?length FILTER (regex(str(?mississippi), "mississippi", "i")) . ?mississippi r:type p:River . }
+SELECT ?length { ?missouri p:length ?length FILTER (regex(str(?missouri), "missouri", "i")) . ?missouri r:type p:River . }
+SELECT ?length { ?north_platte p:length ?length FILTER (regex(str(?north_platte), "north_platte", "i")) . ?north_platte r:type p:River . }
+SELECT ?length { ?ohio p:length ?length FILTER (regex(str(?ohio), "ohio", "i")) . ?ohio r:type p:River . }
+SELECT ?length { ?rio_grande p:length ?length FILTER (regex(str(?rio_grande), "rio_grande", "i")) . ?rio_grande r:type p:River . }
+SELECT ?A { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . } ORDER BY ?length LIMIT 1
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:name ?austin FILTER (regex(str(?austin), "austin", "i")) . } 
+SELECT ?population { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?population { ?california p:population ?population FILTER (regex(str(?california), "california", "i")) . }
+SELECT (COUNT(?colorado) AS ?QTD) { ?colorado r:type p:River FILTER (regex(str(?colorado), "colorado", "i")) . }
+SELECT ?population { ?montgomery p:population ?population FILTER (regex(str(?montgomery), "montgomery", "i")) . }
+SELECT (COUNT(?B) AS ?QTD) { ?A p:city ?B . ?B r:type p:Major . ?A p:border ?nebraska FILTER (regex(str(?nebraska), "nebraska", "i")) . }
+SELECT (COUNT(?B) AS ?QTD) { ?A p:city ?B . ?B r:type p:Major . ?A p:border ?utah FILTER (regex(str(?utah), "utah", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:City . ?A r:type p:Major . }
+SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:River . ?A r:type p:Major . ?A p:run_through ?ohio FILTER (regex(str(?ohio), "ohio", "i")) . }
+SELECT ?population { ?austin p:population ?population FILTER (regex(str(?austin), "austin", "i")) . ?texas p:city ?austin FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?population { ?minneapolis p:population ?population FILTER (regex(str(?minneapolis), "minneapolis", "i")) . ?minnesota p:city ?minnesota FILTER (regex(str(?minnesota), "minnesota", "i")) . }
+SELECT ?population { ?rhode_island p:population ?population FILTER (regex(str(?rhode_island), "rhode_island", "i")) . }
+SELECT ?population { ?spokane p:population ?population FILTER (regex(str(?spokane), "spokane", "i")) . ?washington p:city ?spokane FILTER (regex(str(?washington), "washington", "i")) . } 
+SELECT ?population { ?new_york p:city ?A FILTER (regex(str(?new_york), "new_york", "i")) . ?A p:population ?population . ?A p:area ?area . ?new_york r:type p:State . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?population { ?capital p:population ?population . ?georgia p:capital ?capital FILTER (regex(str(?georgia), "georgia", "i")) . } 
+SELECT ?population { ?capital p:population ?population . ?texas p:capital ?capital FILTER (regex(str(?texas), "texas", "i")) . } 
+SELECT ?population { ?A r:type p:State . ?A p:border ?wyoming FILTER (regex(str(?wyoming), "wyoming", "i")) . ?A p:area ?area . ?A p:population ?population . } ORDER BY ?area LIMIT 1
+SELECT ?population ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?population { ?united_states p:population ?population FILTER (regex(str(?united_states), "united_states", "i")) . }
+SELECT ?population { ?utah p:population ?population FILTER (regex(str(?utah), "utah", "i")) . }
+SELECT ?population { ?utah p:population ?population FILTER (regex(str(?utah), "utah", "i")) . }
+SELECT ?population { ?texas p:population ?population FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:name ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:River . }
+SELECT (COUNT(?A) AS ?QTD) { ?colorado p:river ?A FILTER (regex(str(?colorado), "colorado", "i")) . }
+SELECT (COUNT(?B) AS ?QTD) { ?A p:river ?B . ?A r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1 
+SELECT (COUNT(?B) AS ?QTD) { ?A p:river ?B . ?A r:type p:State . ?A p:highest_point ?C . ?C p:height ? height . } GROUP BY ?A ORDER BY DESC(?hight) LIMIT 1
+SELECT (COUNT(?B) AS ?QTD) { ?A p:river ?B . ?A r:type p:State . ?A p:population ?population } GROUP BY ?A ORDER BY DESC(?population) LIMIT 1 
+SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:River FILTER NOT EXISTS { ?A p:run_through ?B . } . ?B r:type p:State . ?B p:capital ?albany FILTER (regex(str(?albany), "albany", "i")) . }
+SELECT (COUNT(?A) AS ?QTD) { ?texas p:river ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:length ?length FILTER ( ?length > ?red ) . }
+SELECT ?square kilometers { ?usa p:square_kilometers ?square kilometers . }
+SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:River . ?B r:type p:Major . }
+SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:State . }
+SELECT (COUNT(?QTD) AS ?QTD2) { { SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . } GROUP BY ?A } }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:border ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . ?A p:border ?new_mexico FILTER (regex(str(?new_mexico), "new_mexico", "i")) . ?A r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:capital ?boston FILTER (regex(str(?boston), "boston", "i")) . ?A r:type p:State . ?B p:border ?A . ?B r:type p:State . }
+SELECT (COUNT(?B) AS ?QTD) { ?B p:border ?A . { SELECT ?A { ?A p:area ?area . ?A r:type p:State . } ORDER BY DESC(?area) LIMIT 1 } }
+SELECT (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT (COUNT(?B) AS ?QTD) { ?B p:border ?A { SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1 } }
+SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:State . MINUS { ?A p:river ?B . } } 
+SELECT (COUNT(?C) AS ?QTD) { ?C r:type p:State . ?C p:highest_point ?D . ?D p:height ?height2 . FILTER ( ?hight2 > ?hight ) . { SELECT ?highest_point { ?usa p:state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:capital ?B . ?B r:type p:City . ?B p:area ?area . ?A p:highest_point ?C . ?C p:height ?height . } ORDER BY DESC(?area) LIMIT 1 } }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:name ?austin FILTER (regex(str(?austin), "austin", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?A p:name ?springfield FILTER (regex(str(?springfield), "springfield", "i")) . ?B p:city ?A . ?B r:type p:State . }
+SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:State . ?A p:river ?B . ?B r:type p:Major . }
+SELECT (COUNT(?A) AS ?QTD) { ?usa p:state ?A FILTER (regex(str(?usa), "usa", "i")) . ?B r:type p:River . ?B p:run_through ?A . ?B p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?height { ?mckinley p:height ?height FILTER (regex(str(?mckinley), "mckinley", "i")) . ?mckinley r:type p:Mountain . }
+SELECT ?height { ?montana p:highest_point ?A FILTER (regex(str(?montana), "montana", "i")) . ?A p:height ?height . } 
+SELECT ?A { ?mckinley p:state ?A FILTER (regex(str(?mckinley), "mckinley", "i")) . ?mckinley r:type p:Mountain . }
+SELECT ?A { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:highest_point ?B . ?B p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT (COUNT(?A) AS ?QTD) { ?iowa p:border ?A FILTER (regex(str(?iowa), "iowa", "i")) . ?A r:type p:State . }
+SELECT ?A { ?A r:type p:State . }
+SELECT ?name { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:capital ?B . ?B p:name ?name . } LIMIT 50
+SELECT ?name { ?A p:name ?name . ?A r:type p:State . FILTER NOT EXISTS { ?A p:border ?B . } }
+SELECT ?population { ?boulder p:population ?population FILTER (regex(str(?boulder), "boulder", "i")) . }
+SELECT ?A { ?mississippi p:run_through ?A . ?A r:type p:State . ?A p:lowest_point ?B . ?B p:height ?height . } ORDER BY ?height LIMIT 1
+SELECT ?A { ?A p:capital ?sacramento FILTER (regex(str(?sacramento), "sacramento", "i")) . ?A r:type p:State . }
+SELECT ?A { ?san_antonio p:state ?A FILTER (regex(str(?san_antonio), "san_antonio", "i")) . }
+SELECT ?A { ?A p:area ?area . ?A r:type p:State . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A p:border ?iowa FILTER (regex(str(?iowa), "iowa", "i")) . ?A r:type p:State . }
+SELECT ?A { ?texas p:river ?B ?A FILTER (regex(str(?texas), "texas", "i")) . ?B r:type p:Major . }
+SELECT ?B { ?texas p:border ?A FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . ?A p:capital ?B . ?B r:type p:City . }
+SELECT ?A { ?texas p:capital ?A FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:City . }
+SELECT ?B { ?A p:city ?B . { SELECT ?A { ?A r:type p:State . ?A p:highest_point ?B . ?B p:height ?height . } ORDER BY DESC(?height) LIMIT 1 } }
+SELECT ?B { ?A r:type p:State . ?A p:highest_point ?B . }
+SELECT ?B { ?mississipi p:border ?A FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:State . ?A p:highest_point ?B . }
+SELECT ?C { ?B p:border ?A . ?A p:city ?C . ?C p:area ?area . { SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) } } ORDER BY DESC(?area)
+SELECT ?name { ?illinois p:city ?A FILTER (regex(str(?illinois), "illinois", "i")) . ?A r:type p:Major . ?A p:name ?name . }
+SELECT ?A { ?michigan p:border ?A FILTER (regex(str(?michigan), "michigan", "i")) . ?A r:type p:State . }
+SELECT ?A ((?population/?area) AS ?density) { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:population ?population . ?A p:area ?area . }
+SELECT ?population { ?montana p:city ?A FILTER (regex(str(?montana), "montana", "i")) . ?A r:type p:Major . ?A p:population ?population . }
+SELECT ?population { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A r:type p:Major . ?A p:population ?population . }
+SELECT ?A { ?A r:type p:State . ?A p:border ?B . { SELECT ?B { ?B r:type p:State . ?B p:population ?population . } ORDER BY DESC(?population) LIMIT 1 } }
+SELECT ?A { ?potomac p:run_through ?A FILTER (regex(str(?potomac), "potomac", "i")) . ?A r:type p:State . }
+SELECT ?B { ?A p:run_through ?B . { SELECT ?A { ?A r:type p:River . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1 } }
+SELECT ?population { ?missouri p:population ?population FILTER (regex(str(?missouri), "missouri", "i")) . }
+SELECT ?A { ?A p:population ?population . ?B p:capital ?A . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?B { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:capital ?B . ?B p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?A p:capital ?B . ?B p:lowest_point ?C . ?C p:height ?height . } ORDER BY ?height LIMIT 1
+SELECT ?B { ?A p:capital ?B . ?B p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?california p:border ?A . ?A r:type p:State . } 
+SELECT (SUM(?area) AS ?SUM) { ?A r:type p:State . ?A p:area ?area . } 
+SELECT ?area { ?maryland p:area ?area FILTER (regex(str(?maryland), "maryland", "i")) . }
+SELECT ?area { ?A p:area ?area . ?A r:type p:State . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?area { ?A p:area ?area . ?A r:type p:State . } ORDER BY ?area LIMIT 1
+SELECT ?area ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY ?density LIMIT 1
+SELECT ?area { ?A p:area ?area . ?A r:type p:State . }
+SELECT ((?population/?area) AS ?density) { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:population ?population . ?A p:area ?area . }
+SELECT ((?population/?area) AS ?density) { ?pennsylvania p:population ?population FILTER (regex(str(?pennsylvania), "pennsylvania", "i")) . ?pennsylvania p:area ?area . }
+SELECT ((?population/?area) AS ?density) { ?usa p:population ?population FILTER (regex(str(?usa), "usa", "i")) . ?usa p:area ?area . }
+SELECT ?A { ?usa p:has_state ?A . ?A p:area ?area . ?A p:river ?B . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?usa p:has_state ?A . ?A p:capital ?B . ?B p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?usa p:has_state ?A . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?B { ?usa p:has_state ?A . ?A p:capital ?B . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?north_dakota p:capital ?A FILTER (regex(str(?north_dakota), "north_dakota", "i")) . }
+SELECT ?C { ?A p:name ?durham FILTER (regex(str(?durham), "durham", "i")) . ?B p:city ?A . ?B p:capital ?C . ?B r:type p:State . }
+SELECT ?B (COUNT(?A) AS ?QTD) { ?A p:capital ?B . ?A r:type p:State . ?A p:border ?C . ?C r:type p:State . } GROUP BY ?B ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?A p:capital ?B . ?A p:highest_point ?C . ?C p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?A p:capital ?B . ?A p:highest_point ?C . ?C p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?A p:capital ?B . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?B ((?population/?area) AS ?density) { ?A p:population ?population . ?A p:area ?area . ?A p:capital ?B . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?C { ?A p:river ?B . ?B p:length ?length . ?A p:capital ?C . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?A p:capital ?B . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT (SUM(?area) AS ?SUM) { ?A p:area ?area { SELECT ?A { ?A r:type p:State . } LIMIT 50 } }
+SELECT (SUM(?population) AS ?SUM) { ?A p:population ?population { SELECT ?A { ?A r:type p:State . } LIMIT 50 } }
+SELECT ((?population/?area) AS ?density) { ?texas p:population ?population FILTER (regex(str(?texas), "texas", "i")) . ?texas p:area ?area . }
+SELECT ?height { ?death_valley p:lowest_point ?B FILTER (regex(str(?death_valley), "death_valley", "i")) . ?B p:height ?height . }
+SELECT ?height { ?usa p:has_state ?A . ?A p:highest_point ?B . ?B p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT ?height { ?usa p:has_state ?A . ?A p:highest_point ?B . ?B p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT ?A { ?wyoming p:highest_point ?A FILTER (regex(str(?wyoming), "wyoming", "i")) . } 
+SELECT ?B { ?A p:highest_point ?B . ?A r:type p:State . ?A p:lowest_point ?sea_level FILTER (regex(str(?sea_level), "sea_level", "i")) . }
+SELECT ?height { ?nevada p:highest_point ?B FILTER (regex(str(?nevada), "nevada", "i")) . ?B p:height ?height . }
+SELECT ?B { ?country p:has_state ?A FILTER (regex(str(?country), "country", "i")) . ?A p:highest_point ?B . ?B p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT ?C { ?A p:highest_point ?C . { SELECT ?A (COUNT(?B) AS ?QTD) { ?A p:river ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1 } }
+SELECT ?C { ?A p:highest_point ?C . ?A p:population ?population . } ORDER BY ?population LIMIT 1 
+SELECT ?C { ?A p:highest_point ?C . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1 
+SELECT ?C { ?A p:highest_point ?C . { SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } GROUP BY ?A ?population ?area ORDER BY ?density LIMIT 1 } }
+SELECT ?B { ?usa p:has_state ?A . ?A p:capital ?B . ?B p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?minnesota p:city ?A FILTER (regex(str(?minnesota), "minnesota", "i")) . ?A p:population ?population } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?B r:type p:State . ?B p:city ?A . ?B p:area ?area . ?mississippi p:run_through ?B FILTER (regex(str(?mississippi), "mississippi", "i")) . { SELECT ?A { ?A r:type p:City . ?A p:area ?area . } ORDER BY DESC(?area) } } ORDER BY ?area
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?rio_grande p:run_through ?A FILTER (regex(str(?rio_grande), "rio_grande", "i")) . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?A p:border ?arkansas FILTER (regex(str(?arkansas), "arkansas", "i")) . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?A p:capital ?B . ?B p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?A p:border ?california FILTER (regex(str(?california), "california", "i")) . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?B r:type p:State . ?A p:border ?B . ?B p:population ?population { SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) } } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?B r:type p:State . ?A p:border ?B . ?B p:lowest_point ?C . ?C p:height ?height . { SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) } } ORDER BY ?height LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY ?population LIMIT 1
+SELECT ?length { ?colorado r:type p:River FILTER (regex(str(?colorado), "colorado", "i")) . ?colorado p:length ?length . ?colorado p:run_through ?texas FILTER (regex(str(?texas), "texas", "i")) . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?length { ?A r:type p:River . ?A p:length ?length . ?A p:run_through ?texas FILTER (regex(str(?texas), "texas", "i")) . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?length (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . ?A p:length ?length . } GROUP BY ?length ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?length (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . ?A p:length ?length . } GROUP BY ?length ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?length (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . ?A p:length ?length . } GROUP BY ?length ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?length (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . ?A p:length ?length . } GROUP BY ?length ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:length ?length . ?A p:run_through ?new_york FILTER (regex(str(?new_york), "new_york", "i")) . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A p:run_through ?B . ?B r:type p:State . ?B p:area ?area . { SELECT ?A { ?A r:type p:River . ?A p:length ?length . } ORDER BY DESC(?length) } } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A p:run_through ?B . ?usa p:has_state ?B FILTER (regex(str(?usa), "usa", "i")) . ?B p:area ?area . { SELECT ?A { ?A r:type p:River . ?A p:length ?length . } ORDER BY DESC(?length) } } ORDER BY ?area LIMIT 1
+SELECT ?A { ?A p:run_through ?B . ?B r:type p:State . ?B p:highest_point ?C . ?C p:height ?height . { SELECT ?A { ?A r:type p:River . ?A p:length ?length . } ORDER BY DESC(?length) } } ORDER BY DESC(?height) LIMIT 1
+SELECT ?A (COUNT(?A) AS ?QTD) { ?A p:run_through ?B . ?B r:type p:State . ?B p:city ?C . ?C r:type p:Major . { SELECT ?A { ?A r:type p:River . ?A p:length ?length . } ORDER BY DESC(?length) } } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:length ?length . MINUS { ?A p:run_through ?texas FILTER (regex(str(?texas), "texas", "i")) . } . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:length ?length . MINUS { ?A p:run_through ?B . ?B p:border ?indiana FILTER (regex(str(?indiana), "indiana", "i")) . } . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:length ?length . ?A p:run_through ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . } ORDER BY DESC(?length) LIMIT 1 
+SELECT ?A (COUNT(?D) AS ?QTD) { ?A p:run_through ?B . ?B r:type p:State . ?B p:border ?C . ?C r:type p:State . ?C p:border ?D . { SELECT ?A { ?A r:type p:River . ?A p:length ?length . } ORDER BY DESC(?length) } } GROUP BY ?A ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:length ?length . MINUS { ?A p:run_through ?B . ?B p:border ?tennessee FILTER (regex(str(?tennessee), "tennessee", "i")) . } . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?height { ?nebraska p:lowest_point ?A FILTER (regex(str(?nebraska), "nebraska", "i")) . ?A p:height ?height . } 
+SELECT ?B { ?A p:lowest_point ?B . ?A r:type p:State . ?colorado p:run_through ?A FILTER (regex(str(?colorado), "colorado", "i")) . ?colorado r:type p:River . } GROUP BY ?B
+SELECT ?B { ?A p:lowest_point ?B . ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?height { ?san_francisco p:highest_point ?A FILTER (regex(str(?san_francisco), "san_francisco", "i")) . ?A p:height ?height . } ORDER BY DESC(?height)
+SELECT ?A ((?population/?area) AS ?density) { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density)
+SELECT ?B { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:capital ?B . ?B p:population ?population . } ORDER BY DESC(?population)
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . ?A p:border ?oklahoma FILTER (regex(str(?oklahoma), "oklahoma", "i")) . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:City . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?name { ?A r:type p:State . ?A p:lowest_point ?B . ?B p:height ?height . ?A p:name ?name . } ORDER BY ?height LIMIT 1
+SELECT (COUNT(?A) AS ?QTD) { ?A r:type p:State . ?A p:border ?kentucky FILTER (regex(str(?kentucky), "kentucky", "i")) . }
+SELECT ((?population/?area) AS ?density) { ?A p:capital ?austin FILTER (regex(str(?austin), "austin", "i")) . ?A p:population ?population . ?A p:area ?area . }
+SELECT ((?population/?area) AS ?density) { ?A p:population ?population . { SELECT ?A ?area { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1 } }
+SELECT ((?population/?area) AS ?density) { ?A p:population ?population . { SELECT ?A ?area { ?A r:type p:State . ?A p:area ?area . } ORDER BY ?area LIMIT 1 } }
+SELECT ((?population/?area) AS ?density) { ?A p:population ?population . { SELECT ?A ?area { ?A r:type p:State . ?A p:area ?area . } ORDER BY ?area LIMIT 1 } }
+SELECT ((?population/?area) AS ?density) { ?A p:area ?area . { SELECT ?A ?population { ?A r:type p:State . ?A p:population ?population . } ORDER BY ?population LIMIT 1 } }
+SELECT ?population { ?atlanta p:population ?population FILTER (regex(str(?atlanta), "atlanta", "i")) . ?ga p:city ?atlanta FILTER (regex(str(?ga), "ga", "i")) . }
+SELECT ?population { ?austin p:population ?population FILTER (regex(str(?austin), "austin", "i")) . ?texas p:city ?austin FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?population { ?boston p:population ?population FILTER (regex(str(?boston), "boston", "i")) . ?massachusetts p:city ?boston FILTER (regex(str(?massachusetts), "massachusetts", "i")) . }
+SELECT ?population { ?erie p:population ?population FILTER (regex(str(?erie), "erie", "i")) . ?pennsylvania p:city ?erie FILTER (regex(str(?pennsylvania), "pennsylvania", "i")) . }
+SELECT ?population { ?portland p:population ?population FILTER (regex(str(?portland), "portland", "i")) . ?maine p:city ?portland FILTER (regex(str(?maine), "maine", "i")) . }
+SELECT ?population { ?seattle p:population ?population FILTER (regex(str(?seattle), "seattle", "i")) . ?washington p:city ?seattle FILTER (regex(str(?washington), "washington", "i")) . }
+SELECT ?population { ?springfield p:population ?population FILTER (regex(str(?springfield), "springfield", "i")) . ?missouri p:city ?springfield FILTER (regex(str(?missouri), "missouri", "i")) . }
+SELECT ?population { ?springfield p:population ?population FILTER (regex(str(?springfield), "springfield", "i")) . ?south_dakota p:city ?springfield FILTER (regex(str(?south_dakota), "south_dakota", "i")) . }
+SELECT ?population { ?tempe p:population ?population FILTER (regex(str(?tempe), "tempe", "i")) . ?arizona p:city ?tempe FILTER (regex(str(?arizona), "arizona", "i")) . }
+SELECT ?population { ?A p:capital ?B . ?B p:population ?population . ?A r:type p:State . ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?population { ?A p:city ?B . ?B p:area ?area_city . ?A p:population ?population . { SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1 } } ORDER BY DESC(?area_city) LIMIT 1 
+SELECT ?population { ?A r:type p:State . ?A p:area ?area . ?A p:population ?population . } ORDER BY DESC(?area) LIMIT 1 
+SELECT ?population { ?A r:type p:State . ?A p:area ?area . ?A p:population ?population . ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . } ORDER BY DESC(?area) LIMIT 1 
+SELECT ?population { ?wisconsin p:city ?A FILTER (regex(str(?wisconsin), "wisconsin", "i")) . ?A r:type p:Major . ?A p:population ?population . } 
+SELECT ?population { ?A r:type p:State . ?A p:area ?area . ?A p:population ?population . } ORDER BY ?area LIMIT 1 
+SELECT ?population { ?A p:population ?population . { SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1 } }
+SELECT ?population ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?population { ?A r:type p:State . ?A p:area ?area . ?A p:population ?population . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?ohio FILTER (regex(str(?ohio), "ohio", "i")) . }
+SELECT ?A { ?usa p:has_state ?A . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?A p:border ?ohio FILTER (regex(str(?ohio), "ohio", "i")) . } ORDER BY ?area LIMIT 1 
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?A p:border ?wyoming FILTER (regex(str(?wyoming), "wyoming", "i")) . } ORDER BY ?area LIMIT 1 
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY ?area LIMIT 1 
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . } ORDER BY ?area LIMIT 1 
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A p:border ?B . { SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY ?area } } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:area ?area . ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?mississippi r:type p:River . } ORDER BY ?area LIMIT 1 
+SELECT ?A { ?B r:type p:River . ?B p:run_through ?A . ?B p:length ?length . { SELECT ?A { ?A r:type p:State . ?A p:area ?area . } ORDER BY ?area } } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:highest_point ?B . ?B p:height ?height . } ORDER BY DESC(?height) LIMIT 1
+SELECT ?A { ?usa p:has_state ?A . ?A p:highest_elevation ?highest_elevation . } ORDER BY DESC(?highest_elevation) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:population ?population . ?A p:area ?area } ORDER BY DESC(?density) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:lowest_point ?B . ?B p:height ?height . } ORDER BY ?height LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY ?density LIMIT 1
+SELECT (SUM(?length) AS ?SUM) { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . } 
+SELECT ?A { ?pennsylvania p:city ?A FILTER (regex(str(?pennsylvania), "pennsylvania", "i")) . ?A r:type p:Major . }
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?illinois FILTER (regex(str(?illinois), "illinois", "i")) . ?A r:type p:Major . }
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?B { ?usa p:river ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:length ?length . } ORDER BY DESC(?length) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?illinois FILTER (regex(str(?illinois), "illinois", "i")) . }
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?C) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . ?B p:city ?C . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?virginia FILTER (regex(str(?virginia), "virginia", "i")) . }
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?C) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . ?B p:border ?C . ?C r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?B . ?B p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?A r:type p:River . MINUS { ?A p:run_through ?tennessee FILTER (regex(str(?tennessee), "tennessee", "i")) . } }
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . }
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . ?B p:border ?C . ?C p:population ?population } ORDER BY DESC(?population) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?A p:area ?area . ?B p:run_through ?A . ?B r:type p:River . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?A p:population ?population . ?B p:run_through ?A . ?B r:type p:River . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?austin FILTER (regex(str(?austin), "austin", "i")) . ?austin p:state ?texas FILTER (regex(str(?texas), "texas", "i")) }
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . ?B p:lowest_point ?lowest_point . } ORDER BY ?lowest_point LIMIT 1
+SELECT ?C { ?C r:type p:River . ?C p:run_through ?A . { SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1 } }
+SELECT ?A { ?A r:type p:State . ?A p:border ?nevada FILTER (regex(str(?nevada), "nevada", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . } GROUP BY ?A ORDER BY ?QTD LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . MINUS { ?A p:border ?alaska FILTER (regex(str(?alaska), "alaska", "i")) . ?A p:border ?hawaii FILTER (regex(str(?hawaii), "hawaii", "i")) } } GROUP BY ?A ORDER BY ?QTD LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:border ?B . ?B p:population ?population . } ORDER BY ?population LIMIT1
+SELECT ?A { ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:highest_point ?highest_point . } ORDER BY DESC(?highest_point) LIMIT1
+SELECT ?A { ?A r:type p:State . ?A p:highest_point ?highest_point . ?colorado p:run_through ?A FILTER (regex(str(?colorado), "colorado", "i")) . ?colorado r:type p:River . } ORDER BY DESC(?highest_point) LIMIT1
+SELECT ?A { ?A r:type p:State . ?A p:river ?B . ?A p:highest_elevation ?highest_elevation . } ORDER BY DESC(?highest_elevation) LIMIT 1
+SELECT ?A { ?A r:type p:State . MINUS { ?A p:river ?B . } }
+SELECT ?A { ?A r:type p:State . ?A p:city ?B . ?B p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:city ?B . ?B p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:highest_elevation ?highest_elevation . } ORDER BY DESC(?highest_elevation) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:city ?B . ?B p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area } ORDER BY ?density LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area } ORDER BY ?density LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:city ?B . ?B r:type p:Major . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:river ?B . ?B r:type p:Major . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:river ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY ?density LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:city ?B . ?B p:population ?population . } ORDER BY ?population LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY ?density LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:capital ?austin FILTER (regex(str(?austin), "austin", "i")) . }
+SELECT ?A { ?A r:type p:State . ?A p:capital ?columbus FILTER (regex(str(?columbus), "columbus", "i")) . }
+SELECT ?A { ?A p:border ?mississippi FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A p:border ?mississippi FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?mississippi p:run_through ?A . ?A p:population ?population . } GROUP BY ?A ?population ORDER BY DESC(?population) LIMIT 1 
+SELECT ?A { ?A p:border ?mississippi FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . }
+SELECT ?B { ?A p:border ?colorado FILTER (regex(str(?colorado), "colorado", "i")) . ?A r:type p:State . ?B p:border ?A . ?B r:type p:State . }
+SELECT ?B { ?A p:border ?mississippi FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?B p:border ?A . ?B r:type p:State . }
+SELECT ?A { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . ?B p:border ?C . ?C r:type p:State . ?C p:border ?florida FILTER (regex(str(?florida), "florida", "i")) . }
+SELECT ?A { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . ?B p:border ?C . ?C r:type p:State . ?C p:border ?D . ?D r:type p:State . ?D p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . }
+SELECT ?A { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . ?B p:border ?C . ?C r:type p:State . ?C p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?B p:border ?A . }
+SELECT ?A { ?ohio p:run_through ?A FILTER (regex(str(?ohio), "ohio", "i")) . ?A r:type p:State . ?B p:border ?A . }
+SELECT ?A { ?mississippi p:run_through ?A FILTER (regex(str(?mississippi), "mississippi", "i")) . ?A r:type p:State . ?B p:border ?A . }
+SELECT ?A { ?A r:type p:State . ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A p:river ?B . ?B r:type p:Major . }
+SELECT ?A { ?A r:type p:State . ?A p:border ?B . { SELECT ?B { ?B r:type p:State . ?B p:population ?population . } ORDER BY DESC(?population) LIMIT 1 } }
+SELECT ?A (COUNT(?C) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . ?B p:border ?C . ?C r:type p:State . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?C) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . ?B p:city ?C . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?C) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . ?B p:city ?C . ?C r:type p:Major . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . ?B p:area ?area . } GROUP BY ?A ORDER BY ?area LIMIT 1
+SELECT ?A (COUNT(?C) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . ?B p:city ?C . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:captial ?dover FILTER (regex(str(?dover), "dover", "i")) . }
+SELECT ?A { ?A r:type p:State . ?A p:river ?B . ?B r:type p:Major . } 
+SELECT ?A { ?A r:type p:State . ?A p:capital ?B . ?A p:highest_point ?B . }
+SELECT ?A { ?A r:type p:State . FILTER NOT EXISTS { ?A p:border ?B . } }
+SELECT ?A { ?A r:type p:State . ?A p:river ?B . }
+SELECT DISTINCT ?A { ?A r:type p:State . ?A p:city ?B . ?B p:name ?springfield FILTER (regex(str(?springfield), "springfield", "i")) . }
+SELECT ?A { ?A r:type p:State . ?A p:highest_point ?B . ?B p:height ?height FILTER ( ?height > ?height2 ) . ?colorado p:highest_point ?C FILTER (regex(str(?colorado), "colorado", "i")) . ?C p:height ?height2 . }
+SELECT DISTINCT ?A { ?A r:type p:State . ?A p:city ?springfield FILTER (regex(str(?springfield), "springfield", "i")) . }
+SELECT ?A { ?texas p:city ?A FILTER (regex(str(?texas), "texas", "i")) . ?A p:population ?population . } GROUP BY ?A ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A r:type p:City . ?A p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT DISTINCT ?A { ?A p:mountain ?B . }
+SELECT ?A { ?A p:city ?austin FILTER (regex(str(?austin), "austin", "i")) . }
+SELECT ?A { ?A p:city ?baton_rouge FILTER (regex(str(?baton_rouge), "baton_rouge", "i")) . }
+SELECT ?A { ?A p:city ?dallas FILTER (regex(str(?dallas), "dallas", "i")) . }
+SELECT ?A { ?A p:city ?fort_wayne FILTER (regex(str(?fort_wayne), "fort_wayne", "i")) . }
+SELECT ?A { ?A p:city ?houston FILTER (regex(str(?houston), "houston", "i")) . }
+SELECT ?A { ?A p:city ?indianapolis FILTER (regex(str(?indianapolis), "indianapolis", "i")) . }
+SELECT ?A { ?A p:has_state ?massachusetts FILTER (regex(str(?massachusetts), "massachusetts", "i")) . }
+SELECT ?A { ?A p:mountain ?whitney FILTER (regex(str(?whitney), "whitney", "i")) . }
+SELECT ?A { ?A p:mountain ?whitney FILTER (regex(str(?whitney), "whitney", "i")) . }
+SELECT ?A { ?A p:has_state ?new_hampshire FILTER (regex(str(?new_hampshire), "new_hampshire", "i")) . }
+SELECT ?A { ?A p:has_state ?new_orleans FILTER (regex(str(?new_orleans), "new_orleans", "i")) . }
+SELECT ?A { ?A p:city ?portland FILTER (regex(str(?portland), "portland", "i")) . }
+SELECT ?A { ?A p:city ?san_diego FILTER (regex(str(?san_diego), "san_diego", "i")) . }
+SELECT ?A { ?A p:city ?san_jose FILTER (regex(str(?san_jose), "san_jose", "i")) . }
+SELECT ?A { ?A p:city ?scotts_valley FILTER (regex(str(?scotts_valley), "scotts_valley", "i")) . }
+SELECT ?A { ?A p:city ?springfield FILTER (regex(str(?springfield), "springfield", "i")) . }
+SELECT ?A { ?A p:river ?chattahoochee FILTER (regex(str(?chattahoochee), "chattahoochee", "i")) . }
+SELECT ?B { ?usa p:montain ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:height ?height . ?A p:state ?B } ORDER BY DESC(?height) LIMIT 1
+SELECT ?B { ?hawaii p:highest_point ?A FILTER (regex(str(?hawaii), "hawaii", "i")) . ?A p:state ?B . }
+SELECT ?B { ?montana p:highest_point ?A FILTER (regex(str(?montana), "montana", "i")) . ?A p:state ?B . }
+SELECT ?B { ?maryland p:lowest_point ?A FILTER (regex(str(?maryland), "maryland", "i")) . ?A p:state ?B . }
+SELECT ?B { ?usa p:lowest_point ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:state ?B . }
+SELECT ?B { ?iowa p:lowest_point ?A FILTER (regex(str(?iowa), "iowa", "i")) . ?A p:state ?B . }
+SELECT ?A { ?new_mexico p:city ?A FILTER (regex(str(?new_mexico), "new_mexico", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A { ?A p:city ?B . ?B p:area ?area . } ORDER BY ?area LIMIT 1
+SELECT ?B { ?A p:capital ?B . MINUS { ?B r:type p:Major . ?B r:type p:City . } }
+SELECT ?A { ?california p:city ?A FILTER (regex(str(?california), "california", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . ?usa p:river ?B FILTER (regex(str(?usa), "usa", "i")) . ?B p:run_through ?A { SELECT ?B { ?B r:type p:River . ?B p:length ?length . } ORDER BY (?length) LIMIT 1 } } GROUP BY ?A ?area ?population
+SELECT ?A { ?A r:type p:Mountain . ?A p:height ?height . MINUS { ?alaska p:mountain ?A FILTER (regex(str(?alaska), "alaska", "i")) . } } ORDER BY DESC(?height) LIMIT 1
+SELECT ?B { ?A r:type p:State . ?mississippi p:run_through ?A . ?A p:lowest_point ?B . } GROUP BY ?B
+SELECT ?A { ?A r:type p:State . ?A p:border ?pennsylvania FILTER (regex(str(?pennsylvania), "pennsylvania", "i")) . ?A p:population ?population . } ORDER BY DESC(?population) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:River . MINUS { ?A p:run_through ?texas FILTER (regex(str(?texas), "texas", "i")) . } } 
+SELECT ?A { ?A r:type p:River . MINUS { ?A p:run_through ?usa FILTER (regex(str(?usa), "usa", "i")) . } } 
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?B . ?B p:border ?C . ?C p:capital ?austin FILTER (regex(str(?austin), "austin", "i")) . }
+SELECT ?A (COUNT(?C) AS ?QTD) { ?A r:type p:River . ?A p:run_through ?B . ?B r:type p:State . ?B p:city ?C } GROUP BY ?A ORDER BY ?QTD LIMIT 1
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?B . { SELECT ?C { ?usa p:has_state ?B FILTER (regex(str(?usa), "usa", "i")) . ?B p:area ?area . } ORDER BY DESC(?area) } }
+SELECT ?A { ?A r:type p:River . ?A p:run_through ?B . { SELECT ?C { ?usa p:has_state ?B FILTER (regex(str(?usa), "usa", "i")) . ?B p:lowest_elevation ?lowest_elevation . } ORDER BY ?lowest_elevation } }
+SELECT ?A { ?A p:border ?florida FILTER (regex(str(?florida), "florida", "i")) . ?A r:type p:State . }
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1 
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:border ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1 
+SELECT ?B { ?A r:type p:State . ?A p:capital ?B . ?B p:population ?population . } ORDER BY ?population LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:river ?B . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1 
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } GROUP BY ?A ORDER BY DESC(?density) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:highest_point ?B . ?B p:hight ?hight . } ORDER BY DESC(?hight) LIMIT 1 
+SELECT ?A { ?A r:type p:State . ?A p:highest_point ?B . ?B p:hight ?hight . } ORDER BY DESC(?hight) LIMIT 1 
+SELECT ?A { ?A r:type p:State . ?A p:highest_point ?B . ?B p:hight ?hight . } ORDER BY DESC(?hight) LIMIT 1 
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY ?density LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:lowest_elevation ?lowest_elevation . } ORDER BY (?lowest_elevation) LIMIT 1 
+SELECT ?A { ?A r:type p:State . ?A p:lowest_elevation ?lowest_elevation . ?A p:border ?idaho FILTER (regex(str(?idaho), "idaho", "i")) . } ORDER BY (?lowest_elevation) LIMIT 1 
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY ?density LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:city ?B . ?B r:type p:Major . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:river ?B . ?B r:type p:Major . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:river ?B . ?B r:type p:Major . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A (COUNT(?B) AS ?QTD) { ?A r:type p:State . ?A p:river ?B . ?B r:type p:Major . } GROUP BY ?A ORDER BY DESC(?QTD) LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:border ?texas FILTER (regex(str(?texas), "texas", "i")) . ?A p:area ?area . } ORDER BY (?area) LIMIT 1 
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY ?density LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY ?density LIMIT 1
+SELECT ?A ((?population/?area) AS ?density) { ?A r:type p:State . ?A p:population ?population . ?A p:area ?area . } ORDER BY ?density LIMIT 1
+SELECT ?A { ?A r:type p:State . ?A p:city ?B . ?montana p:city ?B FILTER (regex(str(?montana), "montana", "i")) . ?B p:area ?area . } ORDER BY DESC(?area) LIMIT 1
+SELECT ?A { ?A r:type p:State . FILTER NOT EXISTS { ?A p:border ?B . } }
+SELECT ?A { ?A r:type p:State . ?A p:border ?B . ?B r:type p:State . ?mississippi p:run_through ?B FILTER (regex(str(?mississippi), "mississippi", "i")) . } GROUP BY ?A
+SELECT ?A { ?A r:type p:State . ?A p:river ?B . { SELECT ?B { ?B r:type p:River . ?B p:length ?length . ?usa p:has_state ?A FILTER (regex(str(?usa), "usa", "i")) . } ORDER BY DESC(?length) LIMIT 1 } }
+SELECT ?A { ?A r:type p:State . ?A p:border ?B . { SELECT ?B { ?B r:type p:State . ?B p:area ?area . } ORDER BY (?area) LIMIT 1 } }
+SELECT ?A { ?A r:type p:State . ?A p:capital ?B . ?B r:type p:City . ?B p:area ?area . } ORDER BY DESC(?area) LIMIT 1 
+SELECT ?A { ?A r:type p:State . MINUS { ?A p:border ?texas . FILTER (regex(str(?texas), "texas", "i")) . } }
+SELECT ?A { ?A r:type p:State . ?A p:city ?B . ?B r:type p:Major . ?B p:name ?austin FILTER (regex(str(?austin), "austin", "i")) . }
+SELECT ?A { ?A r:type p:State . ?A p:highest_point ?B . ?B p:height ?height FILTER ( ?height > ?height2 ) . ?colorado p:highest_point ?C FILTER (regex(str(?colorado), "colorado", "i")) . ?C p:height ?height2 . }
+SELECT ?A { ?A r:type p:State . ?A p:highest_point ?B . ?B p:height ?height FILTER ( ?height > ?height2 ) . ?texas p:highest_point ?C FILTER (regex(str(?texas), "texas", "i")) . ?C p:height ?height2 . }
+SELECT ?A { ?A r:type p:State . ?A p:river ?B . { SELECT ?B { ?B r:type p:River . ?B p:length ?length . ?usa p:river ?B FILTER (regex(str(?usa), "usa", "i")) . } ORDER BY DESC(?length) LIMIT 1 } }
+SELECT ?A ((?population/?area) AS ?density) { ?usa p:city ?A FILTER (regex(str(?usa), "usa", "i")) . ?A p:population ?population . ?A p:area ?area . } ORDER BY DESC(?density) LIMIT 1
+SELECT ?A { ?virginia p:city ?A FILTER (regex(str(?virginia), "virginia", "i")) . }
